@@ -5,7 +5,7 @@ var frontpage = [
 	"                           |_|_|__/|___|_,_|.|___|_|_|__/|_|  ",
 	"",
 	"",
-	"Welcome to hack.chat, a minimal, distraction-free chat application.",
+	"Welcome to Anochat, a minimal, distraction-free chat application.",
 	"Channels are created and joined by going to https://hack.chat/?your-channel. There are no channel lists, so a secret channel name can be used for private discussions.",
 	"",
 	"Here are some pre-made channels you can join:",
@@ -20,7 +20,7 @@ var frontpage = [
 	"Whitespace is preserved, so source code can be pasted verbatim.",
 	"Surround LaTeX with a dollar sign for inline style $\\zeta(2) = \\pi^2/6$, and two dollars for display. $$\\int_0^1 \\int_0^1 \\frac{1}{1-xy} dx dy = \\frac{\\pi^2}{6}$$",
 	"",
-	"GitHub: https://github.com/AndrewBelt/hack.chat",
+	"Thank You to Hack Chat for inspiring me to edit the already put out version! You can check them out here: hack.chat",
 	"Android apps: https://goo.gl/UkbKYy https://goo.gl/qasdSu https://goo.gl/fGQFQN",
 	"",
 	"Server and web client released under the MIT open source license.",
@@ -87,7 +87,7 @@ function join(channel) {
 
 	ws.onclose = function() {
 		if (wasConnected) {
-			pushMessage({nick: '!', text: "Server disconnected. Attempting to reconnect..."})
+			pushMessage({nick: '!', text: "Server disconnected. Attempting to reconnect please wait..."})
 		}
 		window.setTimeout(function() {
 			join(channel)
